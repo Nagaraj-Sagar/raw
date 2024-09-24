@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span style="background-color: aqua;font-size: xx-large;">GENERAL BUS PASS APPLICATION</span><br><br>
+    <fieldset>
+        <legend style="background-color: blue; color: white;">Applicant Details</legend>
+    <form action="http://127.0.0.1:5500/response.html" method="get">
+        <label for="name"> Name:</label>
+        <input type="name" id="name">
+
+        <label for="Father&#39;s / Gaurdian name"> Father's / Gaurdian's Name:</label>
+        <input type="Father&#39;s / Gaurdian name" id="Father&#39;s / Gaurdian name" required=""><br><br>
+        <label for="Date of Birth"> Date of Birth:</label>
+        <input type="Date of Birth" id="Date of Birth" required="">
+        <label for="gender">Gender:</label>
+        <label for="male"> Male</label>
+        <input type="radio" id="male" name="gender" required="">
+        <label for="female"> Female</label>
+        <input type="radio" id="female" name="gender" required=""><br><br>
+        <label for="age">Age:</label>
+        <input type="name" id="age">
+        <label for="aadhar number">aadhar number:</label>
+        <input type="aadhar number" id="aadhar number">
+        <br><br>
+        <label for="mobile no"> Mobile No:</label>
+        <input type="mobile no" id="mobile no">
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <br><br>
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" accept="images">
+
+     </form></fieldset>
+    <br><br>
+    <fieldset>
+        <legend style="background-color: blue; color: white;">Residential Address Details</legend>
+        
+            <label for="Applicant Address">Applicant Address:</label>
+            <textarea name="Applicant Address" id="Applicant Address" minlength="20"></textarea>
+            <label for="district">District:</label>
+            <select>
+                <option>hyderabad</option>
+                <option>banglore</option>
+                <option>mumbai</option>
+                <option>ayodya</option>
+            </select><br><br>
+            <label for="Mandal">Mandal:</label>
+            <select>
+                <option>hyderabad</option>
+                <option>banglore</option>
+                <option>mumbai</option>
+                <option>ayodya</option>
+            </select>
+            <label for="village">Village:</label>
+            <select>
+                <option>hyderabad</option>
+                <option>banglore</option>
+                <option>mumbai</option>
+                <option>ayodya</option>
+            </select><br><br>
+            <label for="pincode">pincode:</label>
+            <input type="pincode" id="pincode">
+        </fieldset> <br><br><br>
+              <fieldset>
+            <legend style="background-color: blue; color: white;">Pass Type Details</legend>
+            
+                <label for="city">city:</label>
+            <select>
+                <option>hyderabad</option>
+                <option>banglore</option>
+                <option>mumbai</option>
+                <option>ayodya</option>
+            </select>
+            <br><br>
+            <label for="passtype">passtype:</label>
+            <select>
+                <option>monthly</option>
+                <option>yearly</option>
+                <option>daily</option>
+                <option>weekly</option>
+            </select>
+
+            
+        </fieldset><br><br><br>
+        <fieldset>
+            <legend style="background-color: blue; color: white;">Mode of Payment &amp; Pass Collection</legend>
+        
+                <label for="Payment Mode">Payment Mode:</label>
+            <select>
+                <option>debitcard</option>
+                <option>creditcard</option>
+                <option>mastercard</option>
+                <option>cash</option>
+            </select>
+            <br><br>
+            <label for="Pass Delivery Mode">Pass Delivery Mode:</label>
+            <select>
+                <option>post</option>
+                <option>fax</option>
+                <option>mail</option>
+            </select>
+            <br><br>
+            <label for="centre at which
+            you want pass">centre at which
+            you want pass:</label>
+            <select>
+                <option>hyderabad</option>
+                <option>banglore</option>
+                <option>mumbai</option>
+                <option>ayodya</option>
+            </select>
+             </fieldset><br>
+            <input type="submit" value="Register">
+            
+        
+        
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+   </body></html>
